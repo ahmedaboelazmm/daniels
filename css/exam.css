@@ -1,0 +1,351 @@
+:root{
+    --main-color: #343434;
+}
+html{
+    scroll-padding-top: 56px;
+}
+/*start section-title */
+.section-title { 
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 7;
+}
+.section-title::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 25px;
+    top: 28px;
+    right: 0px;
+    z-index: -1;
+}
+/*end section-title */
+
+/* start navbar */
+.navbar{
+    scroll-padding-top: 50px
+}
+.navbar a {
+    color: #000 !important;
+}
+nav{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav .nav-item a{
+    position: relative;
+    margin:0 5px;
+}
+ .nav-item a::before{
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition:all .5s;
+    
+}
+ .nav-item a:hover::before{
+  width: 70%;
+}
+.nav-item .nav-link{
+    color: black;
+}
+
+/* end navbar */
+
+/* start header */
+header{
+    background-image:url(../img/bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#Home .over-lay{
+    background-color: rgb(0, 0, 0, .5);
+}
+#Home .social{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 0, 0, .5);
+    cursor: pointer;
+}
+.over-lay h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.over-lay h4{
+    font-size: 40px;
+    position: relative;
+} 
+.over-lay h4::after{
+    content: '|';
+    height: 30px;
+    width: 3px;
+    color: white;
+    animation: Typing 15s infinite linear;
+    
+} 
+@keyframes Typing {
+
+    0% {content:'D|';}
+    1% {content:'De|';}
+    2% {content:'Dev|';}
+    3% {content:'Deve|';}
+    4% {content:'Devel|';}
+    5% {content:'Develo|';}
+    6% {content:'Develop|';}
+    7% {content:'Develope|';}
+    8% {content:'Developer|';}
+    9% {content:'Develope|';}
+    10% {content:'Develop|';}
+    11% {content:'Develo|';}
+    12% {content:'Devel|';}
+    13% {content:'Deve|';}
+    14% {content:'Dev|';}
+    15% {content:'De|';}
+    16% {content:'D|';}
+    17% {content:'D|';}
+    18% {content:'De|';}
+    19% {content:'Des|';}
+    20% {content:'Desi|';}
+    21% {content:'Desig|';}
+    22% {content:'Design|';}
+    23% {content:'Designe|';}
+    24% {content:'Designe|';}
+    25% {content:'Designer|';}
+    26% {content:'Designe|';}
+    27% {content:'Design|';}
+    28% {content:'Desig|';}
+    29% {content:'Desi|';}
+    30% {content:'Des|';}
+    31% {content:'De|';}
+    32% {content:'D|';}
+    33% {content:'L|';}
+    34% {content:'La|';}
+    35% {content:'Lar|';}
+    36% {content:'Larr|';}
+    37% {content:'Larry|';}
+    38% {content:'Larry D|';}
+    39% {content:'Larry Da|';}
+    40% {content:'Larry Dan|';}
+    41% {content:'Larry Dani|';}
+    42% {content:'Larry Danie|';}
+    43% {content:'Larry Daniel|';}
+    44% {content:'Larry Daniels|';}
+    45% {content:'Larry Daniel|';}
+    46% {content:'Larry Danie|';}
+    47% {content:'Larry Dani|';}
+    48% {content:'Larry Dan|';}
+    49% {content:'Larry Da|';}
+    50% {content:'Larry D|';}
+    51% {content:'Larry |';}
+    52% {content:'Larr|';}
+    53% {content:'Lar|';}
+    54% {content:'La|';}
+    60% {content:'La|';}
+    62% {content:'L|';}
+   
+}
+/* end header */
+
+/* start about */
+
+ 
+ .about-inner .img::after{
+     content: "";
+     position: absolute;
+     width: 75%;
+     height: 75%;
+     background-image: url(../img/dots.png);
+     left: 0;
+     bottom: -30px;
+     background-repeat: repeat;
+     z-index: -1;
+ } 
+.about-button .info{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    border:1px solid black;
+    transition: all .5s;
+}
+.about-button .info:hover{
+    background-color: white;
+    color: black;
+}
+.about-button .btn-info{
+    background-color: white;
+    color: black;
+    border:1px solid black;
+    padding: 6px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.about-button .btn-info:hover{
+    background-color: black;
+    color: white;
+}
+.bars .progress-bar {
+    background-color: black;
+}
+/* end about */
+
+/* start sevise */
+.services-items .icon{
+   width: 70px;
+   height: 70px;
+   transition: all 0.5s;
+   cursor: pointer;
+   font-size: 30px;
+   position: relative;
+   top: 50px;
+   background-color:gainsboro;
+   }
+.services-items .icon:hover{
+  background-color: black;
+    color: white;
+   }
+
+
+/* end sevise */
+
+/* start work */
+#work .nav-item button.active{
+  background-color: white;
+  color: black;
+  position: relative;
+}
+#work .nav-item button.active::before{
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    
+    width: 50%;
+}
+
+#work .work-img .imglayer{
+   background-color: rgb(255, 255, 255,.9); 
+   opacity: 0;
+   transition: all .4s ease-in-out;
+}
+#work .work-img .work-details{
+    position: absolute;
+    top: 100%;
+    transition: all .4s ease-in-out;
+}
+.work-img{
+  cursor: pointer;  
+}
+#work .work-img .imglayer:hover{
+opacity: 1;
+border: 5px solid gainsboro;
+}
+#work .work-img:hover .work-details{
+ top: 35%;
+ 
+}
+
+/* end work */
+
+/* start clients */
+#carouselExampleDark .carousel-indicators{
+    position: absolute;
+    bottom: -50px;
+
+}
+#carouselExampleDark .carousel-indicators button{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+}
+.carousel-item img{
+width: 100px;
+}
+/* end clients */
+
+/* start team  */
+.team {
+    background: #f7f7f7;
+}
+.team .card {
+    background-color: #5B5B5B
+}
+.team .card-body h5 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 25px;
+}
+.team .card-body h6 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+}
+.team .social-media i {
+    color: white;
+    font-size: 19px;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    border-radius: 50%;
+    background: #000;
+    transition:all .5s;
+}
+.team .social-media i:hover {
+    background-color: white;
+    color: #000;
+}
+.team .social-media {
+    transform: rotateY(180deg);
+}
+.team .overlay {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    width: 97%;
+    top: 6px;
+    bottom: 5px;
+    left: 6px;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.team .card:hover .overlay{
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+.team .image {
+    overflow: hidden;
+}
+.team .image img {
+    transition: all 0.8s;
+}
+.team .image:hover img {
+    transform: scale(1.2);
+}
+
+/* end team  */
+
+/* start contact */
+.contact-icon .icon{
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+    background-color:gainsboro;
+}
+.contact-icon .icon:hover{
+    background-color: black;
+    color: white;
+}
+/* end contact */
